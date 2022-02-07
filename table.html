@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблица</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background-color: bisque;
+            padding: 20px;
+
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgba(141, 131, 131, 0.452);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Таблица заявок</h1>
+        <hr>
+    </header>
+    <section>
+        <table border="1px solid">
+            <caption>Контактные данные</caption>
+            <thead>
+                <tr>
+                    <th>Имя</th>
+                    <th>Фамилия</th>
+                    <th>E-mail</th>
+                    <th>Номер телефона</th>
+                    <th>Дата рождения</th>
+                    <th>Пол</th>
+                    <th>Браузер</th>
+                    <th>Доп информация</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="7" style="text-align:right">ИТОГО заявок:</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+            <tbody>
+
+            </tbody>
+
+            <tr>
+                <td>Иван</td>
+                <td>Иванов</td>
+                <td>ivanivanov@gmail.com</td>
+                <td>+38(066)345-67-09</td>
+                <td>01.01.1970</td>
+                <td>Мужской</td>
+                <td>Firefox</td>
+                <td>52 года, женат, 2 детей, в свободное время занимаюсь спортом</td>
+            </tr>
+            <tr>
+                <td>Тамара</td>
+                <td>Григоренко</td>
+                <td>tgrigorenkoo@gmail.com</td>
+                <td>+38(066)710-45-56</td>
+                <td>04/09/1957</td>
+                <td>Женский</td>
+                <td>Chrome</td>
+                <td>Занимаюсь внуками, люблю готовить и вязать</td>
+            </tr>
+            <tr>
+                <td>Виктория</td>
+                <td>Вотинова</td>
+                <td>votivotinova@gmail.com</td>
+                <td>+38(099)788-43-98</td>
+                <td>03.09.1995</td>
+                <td>Женский</td>
+                <td>Safari</td>
+                <td>В свободное время читаю книги, люблю путешествовать</td>
+            </tr>
+            <tr>
+                <td>Алексей</td>
+                <td>Петровцев</td>
+                <td>petrovcev1@gmail.com</td>
+                <td>+38(073)654-07-45</td>
+                <td>24.05.1987</td>
+                <td>Мужской</td>
+                <td>Firefox</td>
+                <td>Побывал в 24 странах, люблю активный отдых</td>
+            </tr>
+            <tr>
+                <td>Виктор</td>
+                <td>Алексеенко</td>
+                <td>vialekseenko@gmail.com</td>
+                <td>+38(067)876-23-85</td>
+                <td>08.09.1967</td>
+                <td>Мужской</td>
+                <td>Safari</td>
+                <td>Имею свой бизнес в сфере недвижимости</td>
+            </tr>
+        </table>
+        <hr>
+    </section>
+    <footer>
+        <p>&copy; 2022 Tatiana Portnenko</p>
+    </footer>
+</body>
+
+</html>

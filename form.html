@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+</head>
+
+<body>
+    <header>
+        <h1>Оставьте свои контактные данные</h1>
+        <hr>
+    </header>
+
+    <section>
+        <form action="table.html" method="POST">
+            <label for="firstName">Введите своё имя:</label> <br>
+            <input type="text" id="firstName" placeholder="Иван" autofocus><br>
+            <label for="lastName">Введите свою фамилию:</label> <br>
+            <input type="text" id="lastName" placeholder="Иванов"><br>
+            <label for="email">Введите свой e-mail:</label><br>
+            <input type="email" id="email" placeholder="ivanivanov@gmail.com"><br>
+            <label for="telephone">Введите свой контактный номер мобильного телефона:</label> <br>
+            <input type="tel" id="telephone" pattern="+38([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                placeholder="+38(066)-000-00-00"> <br>
+            <label for="birthday">Введите дату своего рождения:</label><br>
+            <input type="date" id="birthday"><br>
+
+            <p>Укажите свой пол:</p>
+            <select name="gender" id="">
+                <option value="Male">Мужской</option>
+                <option value="Female" selected>Женский</option>
+            </select> <br>
+
+            <label for="browser">Каким браузером Вы пользуетесь чаще всего:</label> <br>
+            <input type="radio" name="browser" value="firefox"> Firefox <br>
+            <input type="radio" name="browser" value="chrome"> Chrome <br>
+            <input type="radio" name="browser" value="safari"> Safari <br>
+
+            <textarea name="info" cols="30" rows="10" maxlength="140"
+                placeholder="Расскажите больше о себе..."></textarea><br>
+
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Очистить">
+        </form>
+        <hr>
+    </section>
+
+    <footer>
+        <p>&copy; 2022 Tatiana Portnenko</p>
+    </footer>
+</body>
+
+</html>
